@@ -16,3 +16,13 @@ function sumDouble(a, b) {
     return a + b;
   }
 }
+
+// 4
+function diff21(n) {
+  let diff = Math.abs(21 - n);
+  if (n > 21) {
+    return diff * 2;
+  } else {
+    return diff;
+  }
+}
