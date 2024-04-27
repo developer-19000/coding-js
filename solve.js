@@ -50,3 +50,20 @@ function makes10(a, b) {
 function nearHundred(n) {
   return Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10;
 }
+
+// 8
+function posNeg(a, b, negative) {
+  if (negative) {
+    if (a < 0 && b < 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    if (a * b < 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
