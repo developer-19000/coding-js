@@ -81,3 +81,12 @@ function notString(str) {
 function missingChar(str, n) {
   return str.slice(0, n) + str.slice(n + 1);
 }
+
+// 11
+function frontBack(str) {
+  if (str.length <= 1) return str;
+  const lastChar = str.slice(-1);
+  const middleChars = str.slice(1, -1);
+  const firstChar = str.slice(0, 1);
+  return `${lastChar}${middleChars}${firstChar}`;
+}
