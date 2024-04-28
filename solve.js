@@ -90,3 +90,9 @@ function frontBack(str) {
   const firstChar = str.slice(0, 1);
   return `${lastChar}${middleChars}${firstChar}`;
 }
+
+// 12
+function front3(str) {
+  const front = str.slice(0, 3);
+  return front.repeat(3);
+}
