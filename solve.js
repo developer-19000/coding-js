@@ -108,3 +108,9 @@ function or35(n) {
   return n % 3 === 0 || n % 5 === 0;
 }
 
+// 15
+function front22(str) {
+  let firstTwo = str.slice(0, 2);
+  return `${firstTwo}${str}${firstTwo}`;
+}
+
