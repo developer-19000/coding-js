@@ -96,3 +96,10 @@ function front3(str) {
   const front = str.slice(0, 3);
   return front.repeat(3);
 }
+
+// 13
+function backAround(str) {
+  const lastChar = str[str.length - 1];
+  return `${lastChar}${str}${lastChar}`;
+}
+
