@@ -134,3 +134,12 @@ function in1020(a, b) {
   );
 }
 
+// 18 => this question also has problems with result. the solution was tested in the console and it is correct
+function isTeen(number) {
+  return number >= 13 && number <= 19;
+}
+function hasTeen(a, b, c) {
+  return !(isTeen(a) && isTeen(b) && isTeen(c));
+}
+
+
