@@ -124,3 +124,13 @@ function icyHot(temp1, temp2) {
   return (temp1 < 0 && temp2 > 100) || (temp2 < 0 && temp1 > 100);
 }
 
+// 18 => there is a problem with results in website. but the solution is correct
+function between1020(number) {
+  return number <= 20 && number >= 10;
+}
+function in1020(a, b) {
+  return (
+    (between1020(a) && !between1020(b)) || (between1020(b) && !between1020(a))
+  );
+}
+
