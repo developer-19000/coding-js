@@ -114,3 +114,8 @@ function front22(str) {
   return `${firstTwo}${str}${firstTwo}`;
 }
 
+// 16
+function startHi(str) {
+  return str.slice(0, 2) === "hi";
+}
+
