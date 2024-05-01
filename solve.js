@@ -119,3 +119,8 @@ function startHi(str) {
   return str.slice(0, 2) === "hi";
 }
 
+// 17
+function icyHot(temp1, temp2) {
+  return (temp1 < 0 && temp2 > 100) || (temp2 < 0 && temp1 > 100);
+}
+
