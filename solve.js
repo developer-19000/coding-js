@@ -147,3 +147,12 @@ function loneTeen(a, b) {
   return !(isTeen(a) && isTeen(b));
 }
 
+// 20
+function delDel(str) {
+  if (str.slice(1, 4) === "del") {
+    return str.slice(0, 1) + str.slice(4);
+  } else {
+    return str;
+  }
+}
+
