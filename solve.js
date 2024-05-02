@@ -142,4 +142,8 @@ function hasTeen(a, b, c) {
   return !(isTeen(a) && isTeen(b) && isTeen(c));
 }
 
+// 19 => this question also has problems with result. like previous questions, the solution was tested
+function loneTeen(a, b) {
+  return !(isTeen(a) && isTeen(b));
+}
 
