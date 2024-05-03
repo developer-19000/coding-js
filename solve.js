@@ -179,3 +179,15 @@ function intMax(a, b, c) {
   return largest;
 }
 
+// 24
+function close10(a, b) {
+  let aDiff = Math.abs(10 - a);
+  let bDiff = Math.abs(10 - b);
+
+  if (aDiff === bDiff) {
+    return 0;
+  } else {
+    return aDiff > bDiff ? b : a;
+  }
+}
+
