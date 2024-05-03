@@ -165,3 +165,10 @@ function mixStart(str) {
   }
 }
 
+// 22
+function startOz(str) {
+  let firstChar = str[0] === "o" ? "o" : "";
+  let secondChar = str[1] === "z" ? "z" : "";
+  return firstChar + secondChar;
+}
+
