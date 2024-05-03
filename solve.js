@@ -191,3 +191,16 @@ function close10(a, b) {
   }
 }
 
+// 25 => another question with problems in results
+function in3040(n) {
+  return n >= 30 && n <= 40;
+}
+
+function in4050(n) {
+  return n >= 40 && n <= 50;
+}
+
+function in3050(a, b) {
+  return (in3040(a) && in3040(b)) || (in4050(a) && in4050(b));
+}
+
