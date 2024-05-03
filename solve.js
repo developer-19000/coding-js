@@ -172,3 +172,10 @@ function startOz(str) {
   return firstChar + secondChar;
 }
 
+// 23
+function intMax(a, b, c) {
+  let larger = a > b ? a : b;
+  let largest = larger > c ? larger : c;
+  return largest;
+}
+
