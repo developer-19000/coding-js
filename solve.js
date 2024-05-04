@@ -228,3 +228,13 @@ function max1020(a, b) {
   return 0;
 }
 
+// 27
+function stringE(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "e") count++;
+  }
+
+  return count >= 1 && count <= 3;
+}
+
