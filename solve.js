@@ -204,3 +204,27 @@ function in3050(a, b) {
   return (in3040(a) && in3040(b)) || (in4050(a) && in4050(b));
 }
 
+// 26 => this question also has problems in the results
+function in1020(n) {
+  return n >= 10 && n <= 20;
+}
+
+function max1020(a, b) {
+  const isAInRange = in1020(a);
+  const isBInRange = in1020(b);
+
+  if (isAInRange && isBInRange) {
+    return Math.max(a, b);
+  }
+
+  if (isAInRange) {
+    return a;
+  }
+
+  if (isBInRange) {
+    return b;
+  }
+
+  return 0;
+}
+
