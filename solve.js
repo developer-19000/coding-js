@@ -238,3 +238,10 @@ function stringE(str) {
   return count >= 1 && count <= 3;
 }
 
+// 28
+function lastDigit(a, b) {
+  let aString = String(a);
+  let bString = String(b);
+  return aString[aString.length - 1] === bString[bString.length - 1];
+}
+
