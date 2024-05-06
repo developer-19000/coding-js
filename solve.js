@@ -245,3 +245,14 @@ function lastDigit(a, b) {
   return aString[aString.length - 1] === bString[bString.length - 1];
 }
 
+// 29
+function endUp(str) {
+  if (str.length <= 3) {
+    return str.toUpperCase();
+  } else {
+    return (
+      str.slice(0, str.length - 3) + str.slice(str.length - 3).toUpperCase()
+    );
+  }
+}
+
