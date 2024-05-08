@@ -265,3 +265,8 @@ function everyNth(str, n) {
   return result;
 }
 
+// 31
+function stringTimes(str, n) {
+  return str.repeat(n);
+}
+
