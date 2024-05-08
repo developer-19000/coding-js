@@ -270,3 +270,11 @@ function stringTimes(str, n) {
   return str.repeat(n);
 }
 
+// 32
+function frontTimes(str, n) {
+  if (str.length <= 3) {
+    return str.repeat(n);
+  } else {
+    return str.slice(0, 3).repeat(n);
+  }
+}
