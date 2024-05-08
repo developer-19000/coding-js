@@ -278,3 +278,15 @@ function frontTimes(str, n) {
     return str.slice(0, 3).repeat(n);
   }
 }
+
+// 33
+function countXX(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "x" && str[i + 1] === "x") {
+      count++;
+    }
+  }
+  return count;
+}
+
