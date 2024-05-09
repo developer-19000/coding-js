@@ -290,3 +290,13 @@ function countXX(str) {
   return count;
 }
 
+// 34
+function doubleX(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "x") {
+      return str[i + 1] === "x" ? true : false;
+    }
+  }
+  return false;
+}
+
