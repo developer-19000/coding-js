@@ -321,3 +321,18 @@ function stringSplosion(str) {
   return result;
 }
 
+// 37
+function last2(str) {
+  let count = 0;
+  let search = str.slice(-2);
+  let sliced = str.slice(0, str.length - 2);
+  console.log(search[0]);
+
+  for (let i = 0; i < sliced.length; i++) {
+    if (str[i] === search[0] && str[i + 1] === search[1]) {
+      count++;
+    }
+  }
+  return count;
+}
+
