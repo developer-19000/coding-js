@@ -309,3 +309,15 @@ function stringBits(str) {
   return result;
 }
 
+// 36
+function stringSplosion(str) {
+  let result = "";
+  let stopIndex = str.length - 1;
+
+  for (let i = 0; i <= stopIndex; i++) {
+    result += str.substring(0, i + 1);
+  }
+
+  return result;
+}
+
