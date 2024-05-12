@@ -7,3 +7,16 @@ function customCharAt(str, index) {
   }
 }
 
+// 2 - custom toUpperCase
+function customToUpperCase(str) {
+  let result = "";
+  for (let char of str) {
+    let charCode = char.charCodeAt(0);
+    if (charCode >= 97 && charCode <= 122) {
+      charCode -= 32;
+    }
+    result += String.fromCharCode(charCode);
+  }
+  return result;
+}
+
