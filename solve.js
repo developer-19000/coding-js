@@ -363,3 +363,18 @@ function array123(nums) {
   return false;
 }
 
+// 41
+function stringMatch(a, b) {
+  let count = 0;
+  const minLength = Math.min(a.length, b.length);
+
+  for (let i = 0; i < minLength - 1; i++) {
+    if (a.slice(i, i + 2) === b.slice(i, i + 2)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+
