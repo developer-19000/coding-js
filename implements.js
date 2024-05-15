@@ -26,3 +26,23 @@ function customToUpperCase(str) {
   return result;
 }
 
+
+// 3 - custom toLowerCase
+function customToLowerCase(str) {
+  let result = "";
+  for (let char of str) {
+    // get the ASCII code of the current character
+    let charCode = char.charCodeAt(0);
+
+    // Check if the ASCII code falls in the range of 65 to 90 (if it does, it is an uppercase letter)
+    if (charCode >= 65 && charCode <= 90) {
+      // if it is uppercase, we add 32 to get the lowercase form of the letter
+      charCode += 32;
+    }
+
+    // using this method we can find the character of a certain ASCII code number
+    result += String.fromCharCode(charCode);
+  }
+  return result;
+}
+
