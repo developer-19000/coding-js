@@ -377,4 +377,15 @@ function stringMatch(a, b) {
   return count;
 }
 
+// 42
+function stringX(str) {
+  if (str.length === 0) return "";
+  let result = str[0];
+  for (let i = 1; i < str.length - 1; i++) {
+    if (str[i] !== "x") result += str[i];
+  }
+  result += str[str.length - 1];
+  return result;
+}
+
 
