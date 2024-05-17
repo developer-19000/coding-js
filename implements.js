@@ -78,3 +78,13 @@ function customEndsWith(str, search) {
   // if we have checked all the characters and they all match, return true
   return true;
 }
+
+// 6 - custom multiply
+function customMultiply(a, b) {
+  let result = 0;
+  for (let i = 0; i < b; i++) {
+    result += a;
+  }
+  return result;
+}
+
