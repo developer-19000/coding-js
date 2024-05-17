@@ -26,7 +26,6 @@ function customToUpperCase(str) {
   return result;
 }
 
-
 // 3 - custom toLowerCase
 function customToLowerCase(str) {
   let result = "";
@@ -44,5 +43,22 @@ function customToLowerCase(str) {
     result += String.fromCharCode(charCode);
   }
   return result;
+}
+
+// 4 - custom startsWith
+function customStartsWith(str, search) {
+  // edge case: if the search string is longer than the string, return false
+  if (search.length > str.length) {
+    return false;
+  }
+  // loop over the characters of the search string
+  for (let i = 0; i < search.length; i++) {
+    // if the current character of the string does not match the current character of the search string, return false
+    if (str[i] !== search[i]) {
+      return false;
+    }
+  }
+  // if we have checked all the characters and they all match, return true
+  return true;
 }
 
