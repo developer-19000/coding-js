@@ -88,3 +88,12 @@ function customMultiply(a, b) {
   return result;
 }
 
+// 7 - custom repeat
+function customRepeat(str, times) {
+  let result = "";
+  for (let i = 0; i < times; i++) {
+    result += str;
+  }
+  return result;
+}
+
