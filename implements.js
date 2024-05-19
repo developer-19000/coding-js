@@ -99,32 +99,14 @@ function customRepeat(str, times) {
 
 // 8 - custom slice
 function customSlice(str, start, end = str.length) {
-  // if the end is not specified, we set it to the length of the string
-
-  // if start is equal to end, we return an empty string
-  if (start === end) return "";
-
-  // if end is greater than start, we return empty string
-  if (end < start) return "";
-
-  // if start is negative , we count back from the end
-  if (start < 0) start = str.length + start;
-
-  // if end is negative, we count back from the end
-  if (end < 0) end = str.length + end;
-
-  // if start is greater than the length of the string, we return empty string
-  if (start > str.length) return "";
-
-  // if end is greater than the length of the string, we set it to the length of the string
-  if (end > str.length) end = str.length;
-
-  // normal case
-  let result = "";
-  for (let i = start; i < end; i++) {
-    result += str[i];
+  // start and end are optional, if not provided, default to 0 and str.length respectively
+  start = Math.max(0, Math.min(start, str.length));
+  end = Math.max(0, Math.min(end, str.length));
+  // if start is greater than end, swap them
+  if (start > end) {
+    [start, end] = [end, start];
   }
-  return result;
+  // return a new string which is a subset of the original string from start to end
+  return str.substring(start, end);
 }
-
 
