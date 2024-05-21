@@ -10,3 +10,7 @@ var twoSum = function (nums, target) {
   return [];
 };
 
+// more effiient way
+var twoSum2 = function (nums, target) {
+    
+}

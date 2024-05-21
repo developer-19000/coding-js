@@ -110,3 +110,13 @@ function customSlice(str, start, end = str.length) {
   return str.substring(start, end);
 }
 
+// 9 - custom indexOf
+function customIndexOf(str, search) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === search) {
+      return i;
+    }
+  }
+  return -1;
+}
+
