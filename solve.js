@@ -431,3 +431,10 @@ function noTriples(nums) {
   }
   return true;
 }
+
+// 47
+function has271(nums) {
+  let str = nums.join("");
+  return str.includes('271')
+}
+
