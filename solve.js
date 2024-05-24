@@ -438,3 +438,8 @@ function has271(nums) {
   return str.includes('271')
 }
 
+// 48
+function helloName(name){
+ return `Hello ${name}!` 
+}
+
