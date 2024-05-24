@@ -448,3 +448,8 @@ function makeAbba(a, b) {
   return `${a}${b}${b}${a}`;
 }
 
+// 50
+function makeTags(tag, word) {
+  return `<${tag}>${word}</${tag}>`;
+}
+
