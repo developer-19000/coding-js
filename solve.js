@@ -464,3 +464,8 @@ function extraEnd(str) {
   return `${lastChars.repeat(3)}`;
 }
 
+// 53
+function firstTwo(str) {
+  return str.slice(0, 2);
+}
+
