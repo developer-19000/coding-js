@@ -469,3 +469,8 @@ function firstTwo(str) {
   return str.slice(0, 2);
 }
 
+// 54 => another question with problems in results
+function firstHalf(str) {
+  return str.slice(0, str.length / 2);
+}
+
