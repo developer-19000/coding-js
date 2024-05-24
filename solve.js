@@ -435,11 +435,16 @@ function noTriples(nums) {
 // 47
 function has271(nums) {
   let str = nums.join("");
-  return str.includes('271')
+  return str.includes("271");
 }
 
 // 48
-function helloName(name){
- return `Hello ${name}!` 
+function helloName(name) {
+  return `Hello ${name}!`;
+}
+
+// 49
+function makeAbba(a, b) {
+  return `${a}${b}${b}${a}`;
 }
 
