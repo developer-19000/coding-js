@@ -458,3 +458,9 @@ function makeOutWord(out, word) {
   return `${out.slice(0, 2)}${word}${out.slice(2)}`;
 }
 
+// 52
+function extraEnd(str) {
+  let lastChars = str.slice(-2);
+  return `${lastChars.repeat(3)}`;
+}
+
