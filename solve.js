@@ -479,4 +479,10 @@ function withoutEnd(str) {
   return str.slice(1, str.length - 1);
 }
 
+// 56
+function comboString(a, b) {
+  let longer = a.length > b.length ? a : b;
+  let shorter = a.length > b.length ? b : a;
+  return `${shorter}${longer}${shorter}`;
+}
 
