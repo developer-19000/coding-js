@@ -515,3 +515,8 @@ function withoutEnd2(str) {
   return str.slice(1, str.length - 1);
 }
 
+// 62 => another question with problems in results
+function middleTwo(str) {
+  return str.slice(str.length / 2 - 1, str.length / 2 + 1);
+}
+
