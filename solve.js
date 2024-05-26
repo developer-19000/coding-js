@@ -491,3 +491,8 @@ function nonStart(a, b) {
   return `${a.slice(1)}${b.slice(1)}`;
 }
 
+// 58
+function left2(str) {
+  return `${str.slice(2)}${str.slice(0, 2)}`;
+}
+
