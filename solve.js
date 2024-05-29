@@ -520,3 +520,8 @@ function middleTwo(str) {
   return str.slice(str.length / 2 - 1, str.length / 2 + 1);
 }
 
+//63
+function endsLy(str) {
+  return str.slice(-2) === "ly";
+}
+
