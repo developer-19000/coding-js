@@ -525,3 +525,10 @@ function endsLy(str) {
   return str.slice(-2) === "ly";
 }
 
+// 64
+function nTwice(str, n) {
+  let firstN = str.slice(0, n);
+  let lastN = str.slice(str.length - n);
+  return `${firstN}${lastN}`;
+}
+
