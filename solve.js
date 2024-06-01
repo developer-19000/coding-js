@@ -569,3 +569,12 @@ function conCat(a, b) {
 }
 
 // 69
+function lastTwo(str) {
+  if (str.length <= 2) {
+    return str.slice(-2).split("").reverse().join("");
+  } else {
+    const lastChars = str.slice(-2).split("").reverse().join("");
+    return `${str.slice(0, str.length - 2)}${lastChars}`;
+  }
+}
+
