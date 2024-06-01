@@ -552,3 +552,10 @@ function atFirst(str) {
   return str.slice(0, 2);
 }
 
+// 67
+function lastChars(a, b) {
+  const first = a[0] || "@";
+  const second = b[b.length - 1] || "@";
+  return `${first}${second}`;
+}
+
