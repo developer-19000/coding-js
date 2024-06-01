@@ -538,3 +538,8 @@ function middleThree(str) {
   return `${str.slice(middle - 2, middle + 1)}`;
 }
 
+// 66
+function hasBad(str) {
+  return str.includes("bad") && (str[0] === "b" || str[1] === "b");
+}
+
