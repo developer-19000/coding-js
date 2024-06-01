@@ -532,3 +532,9 @@ function nTwice(str, n) {
   return `${firstN}${lastN}`;
 }
 
+// 65
+function middleThree(str) {
+  const middle = Math.ceil(str.length / 2);
+  return `${str.slice(middle - 2, middle + 1)}`;
+}
+
