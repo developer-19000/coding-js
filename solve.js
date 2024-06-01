@@ -543,3 +543,12 @@ function hasBad(str) {
   return str.includes("bad") && (str[0] === "b" || str[1] === "b");
 }
 
+// 67
+function atFirst(str) {
+  if (str === "") return "@@";
+  if (str.length < 2) {
+    return `${str}@`;
+  }
+  return str.slice(0, 2);
+}
+
