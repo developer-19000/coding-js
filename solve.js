@@ -585,3 +585,9 @@ function seeColor(str) {
   return "";
 }
 
+// 71
+function frontAgain(str) {
+  if (str.length < 2) return false;
+  return str.slice(0, 2) === str.slice(-2);
+}
+
