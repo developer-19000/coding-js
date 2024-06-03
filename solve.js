@@ -603,4 +603,9 @@ function extraFront(str) {
   return `${str.slice(0, 2).repeat(3)}`;
 }
 
+// 74
+function without2(str) {
+  if (str.length < 2) return str;
+  return str.slice(0, 2) === str.slice(-2) ? str.slice(2) : str;
+}
 
