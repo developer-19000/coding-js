@@ -598,3 +598,9 @@ function minCat(a, b) {
   return a.slice(-len) + b.slice(-len);
 }
 
+// 73
+function extraFront(str) {
+  return `${str.slice(0, 2).repeat(3)}`;
+}
+
+
