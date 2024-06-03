@@ -591,3 +591,10 @@ function frontAgain(str) {
   return str.slice(0, 2) === str.slice(-2);
 }
 
+// 72
+function minCat(a, b) {
+  if (!a || !b) return "";
+  const len = Math.min(a.length, b.length);
+  return a.slice(-len) + b.slice(-len);
+}
+
