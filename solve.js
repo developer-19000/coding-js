@@ -609,3 +609,12 @@ function without2(str) {
   return str.slice(0, 2) === str.slice(-2) ? str.slice(2) : str;
 }
 
+// 75
+function deFront(str) {
+  let result = "";
+  if (str[0] === "a") result += "a";
+  if (str[1] === "b") result += "b";
+  result += str.slice(2);
+  return result;
+}
+
