@@ -11,8 +11,18 @@ var twoSum = function (nums, target) {
 };
 
 // more effiient way
-var twoSum2 = function (nums, target) {};
+var twoSum2 = function (nums, target) {
+  let hashMap = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+    if (hashMap.has(complement)) {
+      return [hashMap.get(complement), i];
+    }
+    hashMap.set(nums[i], i);
+  }
 
+  return [];
+};
 
 // 9 - pailindome number (https://leetcode.com/problems/palindrome-number/)
 var isPalindrome = function (x) {
