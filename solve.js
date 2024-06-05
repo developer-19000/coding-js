@@ -618,3 +618,10 @@ function deFront(str) {
   return result;
 }
 
+// 76
+function startWord(str, word) {
+  let len = word.length;
+  if (str.slice(1, len) === word.slice(1)) return str.slice(0, len);
+  return "";
+}
+
