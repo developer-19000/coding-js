@@ -625,3 +625,14 @@ function startWord(str, word) {
   return "";
 }
 
+// 77
+function withoutX(str) {
+  if (str.startsWith("x")) {
+    str = str.slice(1);
+  }
+  if (str.endsWith("x")) {
+    str = str.slice(0, -1);
+  }
+  return str;
+}
+
