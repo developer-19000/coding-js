@@ -636,3 +636,14 @@ function withoutX(str) {
   return str;
 }
 
+// 78
+function withoutX2(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (i === 0 && str[i] === "x") continue;
+    if (i === 1 && str[i] === "x") continue;
+    result += str[i];
+  }
+  return result;
+}
+
