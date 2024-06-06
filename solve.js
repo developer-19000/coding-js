@@ -667,3 +667,22 @@ function countHi(str) {
   return count;
 }
 
+// 81
+function countSubStringTimes(str, search) {
+  let count = 0;
+  let len = str.length;
+  let searchLen = search.length;
+
+  for (let i = 0; i < len; i++) {
+    if (str.slice(i, i + searchLen) === search) count++;
+  }
+  return count;
+}
+
+function catDog(str) {
+  let catCounts = countSubStringTimes(str, "cat");
+  let dogCounts = countSubStringTimes(str, "dog");
+  return catCounts === dogCounts;
+}
+
+
