@@ -679,10 +679,10 @@ function countSubStringTimes(str, search) {
   return count;
 }
 
+//82
 function catDog(str) {
   let catCounts = countSubStringTimes(str, "cat");
   let dogCounts = countSubStringTimes(str, "dog");
   return catCounts === dogCounts;
 }
-
 
