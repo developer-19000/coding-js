@@ -686,3 +686,12 @@ function catDog(str) {
   return catCounts === dogCounts;
 }
 
+// 83
+function countCode(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "c" && str[i + 1] === "o" && str[i + 3] === "e") count++;
+  }
+  return count;
+}
+
