@@ -695,3 +695,10 @@ function countCode(str) {
   return count;
 }
 
+// 84
+function endOther(a, b) {
+  let lowerCaseA = a.toLowerCase();
+  let lowerCaseB = b.toLowerCase();
+  return lowerCaseA.endsWith(lowerCaseB) || lowerCaseB.endsWith(lowerCaseA);
+}
+
