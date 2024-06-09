@@ -702,3 +702,17 @@ function endOther(a, b) {
   return lowerCaseA.endsWith(lowerCaseB) || lowerCaseB.endsWith(lowerCaseA);
 }
 
+// 85
+function xyzThere(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i] === "x" &&
+      str[i + 1] === "y" &&
+      str[i + 2] === "z" &&
+      str[i - 1] !== "."
+    )
+      return true;
+  }
+  return false;
+}
+
