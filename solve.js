@@ -724,3 +724,15 @@ function bobThere(str) {
   return false;
 }
 
+// 87
+function xyBalance(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "x") {
+      if (!str.slice(i).includes("y")) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
