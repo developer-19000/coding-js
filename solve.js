@@ -763,3 +763,10 @@ function repeatFront(str, n) {
   return result;
 }
 
+// 91
+function repeatSeparator(word, sep, count) {
+  if (count === 1) return word;
+  let result = word + sep;
+  return result.repeat(count).slice(0, -1 * sep.length);
+}
+
