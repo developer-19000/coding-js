@@ -736,3 +736,16 @@ function xyBalance(str) {
   return true;
 }
 
+// 88
+function mixString(a, b) {
+  let result = "";
+  let longer = a.length > b.length ? a : b;
+  let shoter = a.length > b.length ? b : a;
+
+  for (let i = 0; i < longer.length; i++) {
+    if (a[i]) result += a[i];
+    if (b[i]) result += b[i];
+  }
+  return result;
+}
+
