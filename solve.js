@@ -749,3 +749,8 @@ function mixString(a, b) {
   return result;
 }
 
+// 89
+function repeatEnd(str, n) {
+  return str.slice(-1 * n).repeat(n);
+}
+
