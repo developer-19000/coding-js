@@ -1,4 +1,7 @@
-// 1 - two sum (https://leetcode.com/problems/two-sum/)
+// 1 - Two Sum (https://leetcode.com/problems/two-sum/)
+// Returns indices of two numbers that add up to the target.
+
+// Time complexity: O(n^2), Space complexity: O(1)
 var twoSum = function (nums, target) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
@@ -10,7 +13,9 @@ var twoSum = function (nums, target) {
   return [];
 };
 
-// more effiient way
+// More efficient solution using a hashmap
+// This solution is more efficient because it finds the pair in a single pass through the array (loops only once)
+// Time complexity: O(n), Space complexity: O(n)
 var twoSum2 = function (nums, target) {
   let hashMap = new Map();
   for (let i = 0; i < nums.length; i++) {
@@ -20,7 +25,6 @@ var twoSum2 = function (nums, target) {
     }
     hashMap.set(nums[i], i);
   }
-
   return [];
 };
 
