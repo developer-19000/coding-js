@@ -770,3 +770,9 @@ function repeatSeparator(word, sep, count) {
   return result.repeat(count).slice(0, -1 * sep.length);
 }
 
+// 92
+function prefixAgain(str, n) {
+  let pref = str.slice(0, n);
+  return str.slice(n).includes(pref);
+}
+
