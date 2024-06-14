@@ -776,3 +776,25 @@ function prefixAgain(str, n) {
   return str.slice(n).includes(pref);
 }
 
+// 93 => a nice challenging question
+function xyzMiddle(str) {
+  for (let i = 0; i < str.length - 2; i++) {
+    if (str.slice(i, i + 3) === "xyz") {
+      const [left, right] = splitString(str, i);
+      if (differByAtMostOne(left.length, right.length)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function splitString(str, index) {
+  return [str.slice(0, index), str.slice(index + 3)];
+}
+
+function differByAtMostOne(num1, num2) {
+  return Math.abs(num1 - num2) <= 1;
+}
+
+
