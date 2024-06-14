@@ -797,4 +797,12 @@ function differByAtMostOne(num1, num2) {
   return Math.abs(num1 - num2) <= 1;
 }
 
+// 94
+function getSandwich(str) {
+  let firstIndex = str.indexOf("bread");
+  let lastIndex = str.lastIndexOf("bread");
+  if (firstIndex !== lastIndex) return str.slice(firstIndex + 5, lastIndex);
+  return "";
+}
+
 
