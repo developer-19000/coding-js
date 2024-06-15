@@ -815,4 +815,12 @@ function sameStarChar(str) {
   return true;
 }
 
+// 97
+function oneTwo(str) {
+  let result = "";
+  for (let i = 0; i < str.length - 2; i += 3) {
+    result += str[i + 1] + str[i + 2] + str[i];
+  }
+  return result;
+}
 
