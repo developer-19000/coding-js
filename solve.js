@@ -837,3 +837,16 @@ function zipZap(str) {
   }
   return result;
 }
+
+// 99
+function starOut(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i - 1] !== "*" && str[i + 1] !== "*" && str[i] !== "*") {
+      result += str[i];
+    }
+  }
+  return result;
+}
+
+// 100
