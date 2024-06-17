@@ -213,3 +213,16 @@ function plusOut(str, word) {
   }
   return result;
 }
+
+// 101
+function wordEnds(str, word) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str.slice(i, i + word.length) === word) {
+      if (str[i - 1]) result += str[i - 1];
+      if (str[i + word.length]) result += str[i + word.length];
+    }
+  }
+  return result;
+}
+
