@@ -66,4 +66,17 @@ function equalIsNot(str) {
   return isCount === notCount;
 }
 
+// 105
+function gHappy(str) {
+  let index = 0;
+  while (index < str.length) {
+    if (str[index] === "g") {
+      if (str[index - 1] !== "g" && str[index + 1] !== "g") {
+        return false;
+      }
+    }
+    index++;
+  }
+  return true;
+}
 
