@@ -19,3 +19,25 @@ function countWordsEndingInYorZ(str) {
   return count;
 }
 
+// 103
+function withoutString(base, remove) {
+  let result = "";
+  let removeLower = remove.toLowerCase(); // Convert the remove string to lowercase for case-insensitive comparison
+  let i = 0;
+
+  while (i < base.length) {
+    // Extract the substring from base of the same length as remove for comparison
+    let sub = base.slice(i, i + remove.length).toLowerCase();
+
+    if (sub === removeLower) {
+      // If the substring matches the remove string, skip over it
+      i += remove.length;
+    } else {
+      // If it doesn't match, add the current character to the result
+      result += base[i];
+      i++;
+    }
+  }
+
+  return result;
+}
