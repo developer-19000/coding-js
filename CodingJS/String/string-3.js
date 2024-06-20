@@ -41,3 +41,29 @@ function withoutString(base, remove) {
 
   return result;
 }
+
+// 104
+function equalIsNot(str) {
+  let isCount = 0;
+  let notCount = 0;
+  let index = 0;
+
+  while (index < str.length) {
+    let isSub = str.substring(index, index + 2);
+    let notSub = str.substring(index, index + 3);
+
+    console.log(isSub, notSub);
+    if (notSub === "not") {
+      notCount++;
+    }
+
+    if (isSub === "is") {
+      isCount++;
+    }
+
+    index++;
+  }
+  return isCount === notCount;
+}
+
+
