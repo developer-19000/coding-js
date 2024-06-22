@@ -92,3 +92,14 @@ function countTriple(str) {
   return count;
 }
 
+// 107
+function sumDigits(str) {
+  let count = 0;
+  let index = 0;
+  while (index < str.length) {
+    if (Number(str[index])) count += Number(str[index]);
+    index++;
+  }
+  return count;
+}
+
