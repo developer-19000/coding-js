@@ -103,3 +103,12 @@ function sumDigits(str) {
   return count;
 }
 
+// 108 => this question has issues in solve section
+function sameEnds(s) {
+  for (let i = Math.floor(s.length / 2); i > 0; i--) {
+    if (s.slice(0, i) === s.slice(-i)) {
+      return s.slice(0, i);
+    }
+  }
+  return "";
+}
