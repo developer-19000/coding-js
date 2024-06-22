@@ -80,3 +80,15 @@ function gHappy(str) {
   return true;
 }
 
+// 106
+function countTriple(str) {
+  let count = 0;
+  let index = 0;
+  while (index < str.length) {
+    let sub = str.substring(index, index + 3);
+    if (sub[0] === sub[1] && sub[1] === sub[2]) count++;
+    index++;
+  }
+  return count;
+}
+
