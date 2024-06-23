@@ -112,3 +112,16 @@ function sameEnds(s) {
   }
   return "";
 }
+
+// 109
+function mirrorEnds(string) {
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === string[string.length - i - 1]) result += string[i];
+    else {
+      return result;
+    }
+  }
+  return result;
+}
+
