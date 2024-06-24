@@ -125,3 +125,27 @@ function mirrorEnds(string) {
   return result;
 }
 
+// 110
+function maxBlock(str) {
+  if (str.length === 0) return 0;
+
+  let maxBlockLength = 1;
+  let currentBlockLength = 1;
+
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === str[i - 1]) {
+      currentBlockLength++;
+    } else {
+      if (currentBlockLength > maxBlockLength) {
+        maxBlockLength = currentBlockLength;
+      }
+      currentBlockLength = 1;
+    }
+  }
+
+  if (currentBlockLength > maxBlockLength) {
+    maxBlockLength = currentBlockLength;
+  }
+
+  return maxBlockLength;
+}
