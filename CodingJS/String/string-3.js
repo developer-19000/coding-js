@@ -149,3 +149,29 @@ function maxBlock(str) {
 
   return maxBlockLength;
 }
+
+// 111
+function sumNumbers(str) {
+  let result = 0;
+  let currentNumber = "";
+  for (let i = 0; i < str.length; i++) {
+    if (isDigit(str[i])) {
+      currentNumber += str[i];
+    } else {
+      currentNumber += ".";
+    }
+  }
+  const splited = currentNumber.split(".");
+
+  for (let i = 0; i < splited.length; i++) {
+    if (isDigit(splited[i])) {
+      result = result + Number(splited[i]);
+    }
+  }
+  return result;
+}
+
+function isDigit(char) {
+  return char >= "0" && char <= "9";
+}
+
