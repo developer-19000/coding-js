@@ -175,3 +175,28 @@ function isDigit(char) {
   return char >= "0" && char <= "9";
 }
 
+// 112
+function notReplace(str) {
+  let result = "";
+  let index = 0;
+
+  while (index < str.length) {
+    if (
+      str.slice(index, index + 2) === "is" &&
+      (index === 0 || !isLetter(str[index - 1])) &&
+      (index + 2 === str.length || !isLetter(str[index + 2]))
+    ) {
+      result += "is not";
+      index += 2;
+    } else {
+      result += str[index];
+      index++;
+    }
+  }
+
+  return result;
+}
+
+function isLetter(c) {
+  return c.toLowerCase() != c.toUpperCase();
+}
