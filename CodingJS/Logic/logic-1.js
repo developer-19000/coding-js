@@ -14,3 +14,11 @@ function dateFashion(you, date) {
   return 1;
 }
 
+// 115
+function squirrelPlay(temp, isSummer) {
+  if (isSummer) {
+    return temp <= 100 && temp >= 60;
+  } else {
+    return temp <= 90 && temp >= 60;
+  }
+}
