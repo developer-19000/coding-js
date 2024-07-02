@@ -35,3 +35,9 @@ function caughtSpeeding(speed, isBirthday) {
     if (speed >= 81) return 2;
   }
 }
+
+// 117
+function sortaSum(a, b) {
+  if (a + b >= 10 && a + b <= 19) return 20;
+  return a + b;
+}
