@@ -9,3 +9,16 @@ class Node {
   }
 }
 
+/*
+    this is the linked list itself
+    each linked list has a head and a tail
+    the head is the first node in the list
+    the tail is the last node in the list
+*/
+class LinkedList {
+  constructor() {
+    // an empty linked list has no head or tail
+    this.head = null;
+    this.tail = null;
+  }
+}
