@@ -22,15 +22,14 @@ class LinkedList {
     this.tail = null;
   }
 
-  // add a new node to the end of the list
+  /*
+    first we check the value 
+    if the value is not valid we return
+    then we create a new node
+    if we don't have a head , meaning the list is empty we set the head and tail to the new node
+    if we do have a head we link the tail to the new node and update the tail to the new node
+  */
   push(value) {
-    /*
-              first we check the value 
-              if the value is not valid we return
-              then we create a new node
-              if we don't have a head , meaning the list is empty we set the head and tail to the new node
-              if we do have a head we link the tail to the new node and update the tail to the new node
-          */
     if (value === undefined || value === null) return;
     let node = new Node(value, null);
     if (!this.head) {
@@ -58,3 +57,10 @@ class LinkedList {
     }
   }
 }
+
+let ll = new LinkedList();
+ll.push(23);
+ll.push(42);
+ll.unshift(12);
+
+console.log(ll);
