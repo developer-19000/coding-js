@@ -41,4 +41,20 @@ class LinkedList {
       this.tail = node;
     }
   }
+
+  /*
+    unshift method adds a new node to the beginning of the list
+    first we check if the value is valid , if it is we create a new node
+    we set the next pointer of the new node to the head. it is either a value or null
+    since we want to append the new node to the beginning of the list we set the head to the new node
+    if we don't have a head we set the head and tail to the new node
+  */
+  unshift(value) {
+    if (value === undefined || value === null) return;
+    let node = new Node(value, this.head);
+    this.head = node;
+    if (!this.tail) {
+      this.tail = node;
+    }
+  }
 }
