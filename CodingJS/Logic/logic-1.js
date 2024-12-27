@@ -67,3 +67,11 @@ function alarmClock(day, vacation) {
 }
 
 console.log(alarmClock(3, true));
+
+// 119
+function love6(a, b) {
+  if (a === 6 || b === 6) return true;
+  if (a + b === 6) return true;
+  if (Math.abs(a - b) === 6) return true;
+  return false;
+}
