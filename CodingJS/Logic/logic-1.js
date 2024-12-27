@@ -41,3 +41,29 @@ function sortaSum(a, b) {
   if (a + b >= 10 && a + b <= 19) return 20;
   return a + b;
 }
+
+// 118 => another question with issues in displaying answers in the website
+function isWeekend(day) {
+  return day === "Fri" || day === "Sat";
+}
+function alarmClock(day, vacation) {
+  let daysOfTheWeek = {
+    0: "Sun",
+    1: "Mon",
+    2: "Tue",
+    3: "Wed",
+    4: "Thu",
+    5: "Fri",
+    6: "Sat",
+  };
+
+  if (!isWeekend(daysOfTheWeek[day])) {
+    if (!vacation) return "7:00";
+    return "10:00";
+  } else {
+    if (vacation) return "off";
+    return "10:00";
+  }
+}
+
+console.log(alarmClock(3, true));
