@@ -84,3 +84,8 @@ function in1To10(n, outsideMode) {
     return n <= 1 || n >= 10;
   }
 }
+
+// 121
+function specialEleven(n) {
+  return n % 11 === 0 || n % 11 === 1;
+}
