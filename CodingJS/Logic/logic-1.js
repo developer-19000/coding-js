@@ -99,3 +99,8 @@ function more20(n) {
 function old35(n) {
   return (n % 5 === 0 && n % 3 !== 0) || (n % 3 === 0 && n % 5 !== 0);
 }
+
+// 124
+function less20(n) {
+  return n % 20 === 19 || n % 20 === 18;
+}
