@@ -112,3 +112,7 @@ function nearTen(num) {
     return remainder <= 2;
   }
 }
+
+function nearTen2(num) {
+  return num % 10 <= 2 || num % 10 >= 8;
+}
