@@ -94,3 +94,8 @@ function specialEleven(n) {
 function more20(n) {
   return n % 20 === 1 || n % 20 === 2;
 }
+
+// 123
+function old35(n) {
+  return (n % 5 === 0 && n % 3 !== 0) || (n % 3 === 0 && n % 5 !== 0);
+}
