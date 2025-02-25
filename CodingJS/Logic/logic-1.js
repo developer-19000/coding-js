@@ -66,8 +66,6 @@ function alarmClock(day, vacation) {
   }
 }
 
-console.log(alarmClock(3, true));
-
 // 119
 function love6(a, b) {
   if (a === 6 || b === 6) return true;
