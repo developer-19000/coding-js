@@ -102,3 +102,13 @@ function old35(n) {
 function less20(n) {
   return n % 20 === 19 || n % 20 === 18;
 }
+
+// 125
+function nearTen(num) {
+  const remainder = num % 10;
+  if (remainder > 5) {
+    return 10 - remainder <= 2;
+  } else {
+    return remainder <= 2;
+  }
+}
