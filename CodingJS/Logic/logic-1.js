@@ -118,3 +118,12 @@ function nearTen2(num) {
   return num % 10 <= 2 || num % 10 >= 8;
 }
 
+// 127
+function isTeen(n) {
+  return n >= 13 && n <= 19;
+}
+
+function teenSum(a, b) {
+  if (isTeen(a) || isTeen(b)) return 19;
+  return a + b;
+}
