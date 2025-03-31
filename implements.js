@@ -119,4 +119,3 @@ function customIndexOf(str, search) {
   }
   return -1;
 }
-

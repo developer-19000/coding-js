@@ -113,6 +113,8 @@ function nearTen(num) {
   }
 }
 
+// 126
 function nearTen2(num) {
   return num % 10 <= 2 || num % 10 >= 8;
 }
+
