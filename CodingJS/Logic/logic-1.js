@@ -128,3 +128,13 @@ function teenSum(a, b) {
   if (isTeen(a) || isTeen(b)) return 19;
   return a + b;
 }
+
+// 129
+function answerCell(isMorning, isMom, isAsleep) {
+  if (isAsleep) return false;
+  if (isMorning) {
+    if (isMom) return true;
+    return false;
+  }
+  return true;
+}
