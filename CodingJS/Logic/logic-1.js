@@ -123,6 +123,7 @@ function isTeen(n) {
   return n >= 13 && n <= 19;
 }
 
+// 128
 function teenSum(a, b) {
   if (isTeen(a) || isTeen(b)) return 19;
   return a + b;
