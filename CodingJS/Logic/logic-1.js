@@ -147,4 +147,10 @@ function teaParty(tea, candy) {
   return 1;
 }
 
-console.log(teaParty(6, 8));
+// 131
+function fizzString(str) {
+  if (str.startsWith("f") && str.endsWith("b")) return "FizzBuzz";
+  if (str.startsWith("f")) return "Fizz";
+  if (str.endsWith("b")) return "Buzz";
+  return str;
+}
