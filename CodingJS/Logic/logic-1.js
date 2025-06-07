@@ -138,3 +138,13 @@ function answerCell(isMorning, isMom, isAsleep) {
   }
   return true;
 }
+
+// 130
+function teaParty(tea, candy) {
+  if (tea < 5 || candy < 5) return 0;
+  if (Number(candy) >= Number(tea) * 2) return 2;
+  if (Number(tea) >= Number(candy) * 2) return 2;
+  return 1;
+}
+
+console.log(teaParty(6, 8));
