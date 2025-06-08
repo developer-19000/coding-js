@@ -192,3 +192,10 @@ function inOrderEqual(a, b, c, equalOk) {
     return false;
   }
 }
+
+// 136
+function lastDigit(a, b) {
+  let aLastDigit = a % 10;
+  let bLastDigit = b % 10;
+  return aLastDigit === bLastDigit;
+}
