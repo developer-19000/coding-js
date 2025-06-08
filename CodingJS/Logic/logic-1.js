@@ -181,3 +181,14 @@ function inOrder(a, b, c, bOk) {
     return false;
   }
 }
+
+// 135
+function inOrderEqual(a, b, c, equalOk) {
+  if (equalOk) {
+    if (b >= a && c >= b) return true;
+    return false;
+  } else {
+    if (b > a && c > b) return true;
+    return false;
+  }
+}
