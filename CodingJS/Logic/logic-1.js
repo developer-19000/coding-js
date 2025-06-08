@@ -162,3 +162,11 @@ function fizzString2(n) {
   if (n % 5 === 0) return "Buzz!";
   return `${n}!`;
 }
+
+// 133
+function twoAsOne(a, b, c) {
+  if (a + b === c) return true;
+  if (a + c === b) return true;
+  if (b + c === a) return true;
+  return false;
+}
