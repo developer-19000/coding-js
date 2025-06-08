@@ -170,3 +170,14 @@ function twoAsOne(a, b, c) {
   if (b + c === a) return true;
   return false;
 }
+
+// 134
+function inOrder(a, b, c, bOk) {
+  if (bOk) {
+    if (c > b) return true;
+    return false;
+  } else {
+    if (b > a && c > b) return true;
+    return false;
+  }
+}
