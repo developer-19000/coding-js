@@ -208,5 +208,3 @@ function lessBy10(a, b, c) {
   console.log(abDiff, acDiff, bcDiff);
   return abDiff >= 10 || acDiff >= 10 || bcDiff >= 10;
 }
-
-console.log(lessBy10(1, 7, 10));
