@@ -199,3 +199,14 @@ function lastDigit(a, b) {
   let bLastDigit = b % 10;
   return aLastDigit === bLastDigit;
 }
+
+// 137
+function lessBy10(a, b, c) {
+  let abDiff = Math.abs(a - b);
+  let acDiff = Math.abs(a - c);
+  let bcDiff = Math.abs(b - c);
+  console.log(abDiff, acDiff, bcDiff);
+  return abDiff >= 10 || acDiff >= 10 || bcDiff >= 10;
+}
+
+console.log(lessBy10(1, 7, 10));
