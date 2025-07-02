@@ -217,3 +217,17 @@ function withoutDoubles(die1, die2, noDoubles) {
   }
   return die1 + die2;
 }
+
+// 139
+function maxMod5(a, b) {
+  if (a === b) return 0;
+  let aRemainder = a % 5;
+  let bRemainder = b % 5;
+
+  if (aRemainder === bRemainder) {
+    let smaller = a > b ? b : a;
+    return smaller;
+  }
+  let bigger = a > b ? a : b;
+  return bigger;
+}
