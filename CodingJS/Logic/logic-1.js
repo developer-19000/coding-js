@@ -208,3 +208,12 @@ function lessBy10(a, b, c) {
   console.log(abDiff, acDiff, bcDiff);
   return abDiff >= 10 || acDiff >= 10 || bcDiff >= 10;
 }
+
+// 138
+function withoutDoubles(die1, die2, noDoubles) {
+  if (noDoubles && die1 === die2) {
+    if (die1 === 6) return die1 + 1;
+    return die1 + die2 + 1;
+  }
+  return die1 + die2;
+}
