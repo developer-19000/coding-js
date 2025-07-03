@@ -246,3 +246,13 @@ function greenTicket(a, b, c) {
   if (a === b && b === c) return 20;
   if (a === b || b === c || a === c) return 10;
 }
+
+// 142
+function blueTicket(a, b, c) {
+  let abSum = a + b;
+  let acSum = a + c;
+  let bcSum = b + c;
+  if (abSum === 10 || acSum === 10 || bcSum === 10) return 10;
+  if (abSum >= acSum + 10 || abSum >= bcSum + 10) return 5;
+  return 0;
+}
