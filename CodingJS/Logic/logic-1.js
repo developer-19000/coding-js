@@ -256,3 +256,19 @@ function blueTicket(a, b, c) {
   if (abSum >= acSum + 10 || abSum >= bcSum + 10) return 5;
   return 0;
 }
+
+// 143
+function shareDigit(a, b) {
+  let aLeftDigit = Math.floor(a / 10);
+  let aRightDigit = a % 10;
+
+  let bLeftDigit = Math.floor(b / 10);
+  let bRightDigit = b % 10;
+
+  return (
+    aLeftDigit === bLeftDigit ||
+    aLeftDigit === bRightDigit ||
+    aRightDigit === bLeftDigit ||
+    aRightDigit === bRightDigit
+  );
+}
