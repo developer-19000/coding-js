@@ -239,3 +239,10 @@ function redTicket(a, b, c) {
   if (a !== b && a !== c) return 1;
   return 0;
 }
+
+// 141
+function greenTicket(a, b, c) {
+  if (a !== b && b !== c && a !== c) return 0;
+  if (a === b && b === c) return 20;
+  if (a === b || b === c || a === c) return 10;
+}
