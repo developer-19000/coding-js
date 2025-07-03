@@ -272,3 +272,13 @@ function shareDigit(a, b) {
     aRightDigit === bRightDigit
   );
 }
+
+// 144
+function sumLimit(a, b) {
+  let sum = a + b;
+  let aDigitLength = String(a).length;
+  let sumDigitLength = String(sum).length;
+
+  if (aDigitLength === sumDigitLength) return sum;
+  return a;
+}
