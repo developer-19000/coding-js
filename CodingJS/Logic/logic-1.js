@@ -231,3 +231,11 @@ function maxMod5(a, b) {
   let bigger = a > b ? a : b;
   return bigger;
 }
+
+// 140
+function redTicket(a, b, c) {
+  if (a === 2 && (b === 2) & (c === 2)) return 10;
+  if (a === b && a === c) return 5;
+  if (a !== b && a !== c) return 1;
+  return 0;
+}
