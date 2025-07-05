@@ -28,3 +28,12 @@ function makeBricks2(small, big, goal) {
 function makeBricks3(small, big, goal) {
   return goal - Math.min(Math.floor(goal / 5), big) * 5 <= small;
 }
+
+// 146
+function loneSum(a, b, c) {
+  let sum = 0;
+  if (a !== b && a !== c) sum += a;
+  if (b !== a && b !== c) sum += b;
+  if (c !== a && c !== b) sum += c;
+  return sum;
+}
