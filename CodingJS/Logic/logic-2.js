@@ -78,8 +78,14 @@ function roundSum(a, b, c) {
 }
 
 function roundNumber(n) {
-  let rightDigit = n % 10;
-  if (rightDigit >= 5) return Math.ceil(n / 10) * 10;
-  else return Math.floor(n / 10) * 10;
+  if (n >= 0) {
+    let rightDigit = n % 10;
+    if (rightDigit >= 5) return Math.ceil(n / 10) * 10;
+    else return Math.floor(n / 10) * 10;
+  } else {
+    let reverse = n * -1;
+    let rightDigit = reverse % 10;
+    if (rightDigit < 5) return Math.floor(reverse / 10) * -10;
+    else return Math.ceil(reverse / 10) * -10;
+  }
 }
-
