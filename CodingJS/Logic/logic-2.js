@@ -45,3 +45,31 @@ function luckySum(a, b, c) {
   if (c === 13) return a + b;
   return a + b + c;
 }
+
+// 148
+function noTeenSum(a, b, c) {
+  let sum = 0;
+  if (!isTeen(a)) sum += a;
+  if (!isTeen(b)) sum += b;
+  if (!isTeen(c)) sum += c;
+  return sum;
+}
+
+function noTeenSum2(a, b, c) {
+  let result = [a, b, c].reduce((acc, next) => {
+    return acc + (!isTeen(next) ? next : 0);
+  }, 0);
+
+  return result;
+}
+
+function isTeen(n) {
+  return (n >= 13 && n <= 14) || (n >= 17 && n <= 19);
+}
+
+let arr = [3, 4, 6];
+let res = arr.reduce((acc, next) => {
+  return acc + next;
+}, 0);
+
+console.log(res);
