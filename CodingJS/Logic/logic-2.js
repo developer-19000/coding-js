@@ -104,11 +104,3 @@ function numAreClose(a, b) {
 function numAreFar(a, b) {
   return Math.abs(a - b) >= 2;
 }
-
-function numAreClose(a, b) {
-  return Math.abs(a - b) <= 1;
-}
-
-function numAreFar(a, b) {
-  return Math.abs(a - b) >= 2;
-}
