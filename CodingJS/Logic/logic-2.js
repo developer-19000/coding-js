@@ -120,3 +120,15 @@ function numAreClose(a, b) {
 function numAreFar(a, b) {
   return Math.abs(a - b) >= 2;
 }
+
+// 151
+function blackjack(a, b) {
+  if (a > 21 && b > 21) return 0;
+  if (a > 21) return b;
+  if (b > 21) return a;
+
+  let aDiff = Math.abs(21 - a);
+  let bDiff = Math.abs(21 - b);
+
+  return aDiff > bDiff ? b : a;
+}
