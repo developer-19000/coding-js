@@ -97,6 +97,22 @@ function closeFar(a, b, c) {
   return false;
 }
 
+function closeFar2(a, b, c) {
+  let abClose = numAreClose(a, b);
+  let acClose = numAreClose(a, c);
+
+  let abFar = numAreFar(a, b);
+  let acFar = numAreFar(a, c);
+  let bcFar = numAreFar(b, c);
+
+  console.log(abClose);
+  console.log(acClose);
+
+  if (abClose) return acFar && bcFar;
+  if (acClose) return abFar && bcFar;
+  return false;
+}
+
 function numAreClose(a, b) {
   return Math.abs(a - b) <= 1;
 }
