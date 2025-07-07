@@ -89,3 +89,26 @@ function roundNumber(n) {
     else return Math.ceil(reverse / 10) * -10;
   }
 }
+
+// 150
+function closeFar(a, b, c) {
+  if (numAreClose(a, b)) return numAreFar(a, c) && numAreFar(b, c);
+  if (numAreClose(a, c)) return numAreFar && numAreFar(b, c);
+  return false;
+}
+
+function numAreClose(a, b) {
+  return Math.abs(a - b) <= 1;
+}
+
+function numAreFar(a, b) {
+  return Math.abs(a - b) >= 2;
+}
+
+function numAreClose(a, b) {
+  return Math.abs(a - b) <= 1;
+}
+
+function numAreFar(a, b) {
+  return Math.abs(a - b) >= 2;
+}
