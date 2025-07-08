@@ -135,7 +135,6 @@ function blackjack(a, b) {
 
 // 152
 function evenlySpaced(a, b, c) {
-  // for this you can use built in Math methods but i prefered writing my own functions
   let smallest = findSmallest([a, b, c]);
   let largest = findLargest([a, b, c]);
 
@@ -143,7 +142,6 @@ function evenlySpaced(a, b, c) {
     return acc + next;
   }, 0);
   let middle = addUp - (smallest + largest);
-  // another way: use sort like [a, b, c].sort((x, y) => x - y) and grab the middle
 
   return largest - middle === middle - smallest;
 }
