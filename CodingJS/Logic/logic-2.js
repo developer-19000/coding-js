@@ -132,3 +132,36 @@ function blackjack(a, b) {
 
   return aDiff > bDiff ? b : a;
 }
+
+// 152
+function evenlySpaced(a, b, c) {
+  // for this you can use built in Math methods but i prefered writing my own functions
+  let smallest = findSmallest([a, b, c]);
+  let largest = findLargest([a, b, c]);
+
+  let addUp = [a, b, c].reduce((acc, next) => {
+    return acc + next;
+  }, 0);
+  let middle = addUp - (smallest + largest);
+  // another way: use sort like [a, b, c].sort((x, y) => x - y) and grab the middle
+
+  return largest - middle === middle - smallest;
+}
+
+function findLargest(arr) {
+  let largest = Number.NEGATIVE_INFINITY;
+  arr.forEach((n) => {
+    if (n > largest) largest = n;
+  });
+  return largest;
+}
+
+function findSmallest(arr) {
+  let smallest = Number.POSITIVE_INFINITY;
+  arr.forEach((n) => {
+    if (n < smallest) smallest = n;
+  });
+  return smallest;
+}
+
+console.log(evenlySpaced(4, 6, 2));
