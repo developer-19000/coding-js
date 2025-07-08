@@ -148,6 +148,13 @@ function evenlySpaced(a, b, c) {
   return largest - middle === middle - smallest;
 }
 
+function evenlySpaced2(a, b, c) {
+  let smallest = Math.min(a, b, c);
+  let largest = Math.max(a, b, c);
+  let middle = [a, b, c].sort((a, b) => a - b)[1];
+  return largest - middle === middle - smallest;
+}
+
 function findLargest(arr) {
   let largest = Number.NEGATIVE_INFINITY;
   arr.forEach((n) => {
