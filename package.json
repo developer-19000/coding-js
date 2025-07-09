@@ -1,0 +1,23 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "Welcome to the CodingJS repository! This repository contains solutions to various programming problems in JavaScript. It is organized into multiple sections to help you navigate through different types of problems and their solutions.",
+  "main": "implements.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/player634/coding-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/player634/coding-js/issues"
+  },
+  "homepage": "https://github.com/player634/coding-js#readme"
+}
