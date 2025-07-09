@@ -27,7 +27,7 @@ When we talk about O(n), we’re looking at a situation where the time it takes 
 ```javascript
 function logItems(n) {
   for (let i = 0; i < n; i++) {
-    console.log(n);
+    console.log(i);
   }
 }
 ```
