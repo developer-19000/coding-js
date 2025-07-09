@@ -30,3 +30,9 @@ function rotateLeft3(nums) {
   let firstElement = nums.shift();
   return [...nums, firstElement];
 }
+
+function rotateLeft3_2(nums) {
+  let firstElement = nums[0];
+  let slicedArray = nums.slice(1);
+  return [...slicedArray, firstElement];
+}
