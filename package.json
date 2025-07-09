@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/player634/coding-js/issues"
   },
-  "homepage": "https://github.com/player634/coding-js#readme"
+  "homepage": "https://github.com/player634/coding-js#readme",
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
 }
