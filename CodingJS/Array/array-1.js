@@ -24,3 +24,9 @@ function sum3(nums) {
     return a + b;
   }, 0);
 }
+
+// 158
+function rotateLeft3(nums) {
+  let firstElement = nums.shift();
+  return [...nums, firstElement];
+}
