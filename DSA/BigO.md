@@ -40,12 +40,20 @@ When we talk about O(n²), we’re dealing with a situation where the time it ta
 
 ```javascript
 function logNested(n) {
-    for(let i = 0 ; i < n ; i++) {
-        for(let j = 0 ; j < n ; j++) {
-            console.log(i , j)
-        }
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      console.log(i, j);
     }
+  }
 }
 ```
 
-in this example the time complexity is n * n (or n^2) for example if we give 10 as input, it runes 100 operations. as the input size increases the algorithm gets less and less efficient
+in this example the time complexity is n \* n (or n^2) for example if we give 10 as input, it runes 100 operations. as the input size increases the algorithm gets less and less efficient
+
+### O(log n)
+
+It means the algorithm cuts the input in half each time instead of checking every single item. As the input grows, the number of steps grows slowly. A good example is binary search. Suppose we have this sorted array:
+
+`[1, 3, 5, 7, 9, 11, 13]`
+
+We want to find the number `9` inside this array. Instead of going from index `0` to the last index, we look at the middle value `7`. Since it is not `9`, and `9` is greater, we move to the right half and repeat the same process. We then hit `11`, so we move to the left half. Finally, we find `9`, which is our target.
