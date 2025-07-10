@@ -1,33 +1,38 @@
-# CodingJS Solutions
+# CodingJS
 
-Welcome to the CodingJS repository! This repository contains solutions to various programming problems in JavaScript. It is organized into multiple sections to help you navigate through different types of problems and their solutions.
+Welcome to the CodingJS repository!  
+This repo contains solutions to a bunch of JavaScript programming problems. Everything is organized into sections to make browsing easier. Some sections also include tests.
+
+## Installation
+
+- Fork the repo  
+- Run `npm install` to set up dependencies  
+- Start coding!
 
 ## Sections
 
 ### [CodingJS](https://the-winter.github.io/codingjs/)
-This section contains solutions to problems from the CodingJS website. Each solution is provided with explanations to help you understand the approach and logic behind it.
+
+This section includes solutions from the CodingJS website. Each problem is saved in its own file to keep things clean and avoid huge files.
 
 ### DSA (Data Structures & Algorithms)
-In the DSA section, you'll find implementations and explanations of various data structures and algorithms. Each topic includes links to related problems to further practice and solidify your understanding.
+
+Here you’ll find various data structures and algorithms, along with markdown explanations and links to related problems. Many of them come with tests to check correctness.
 
 ### LeetCode
-The LeetCode section provides solutions to problems from LeetCode. Each solution is accompanied by explanations and links to the problems, making it easier to follow along and understand the solutions.
+
+This part has solutions to LeetCode problems, with short explanations and links to the original problems so you can follow along easily.
 
 ### Implementations
-This section includes implementations of built-in JavaScript methods. It serves as additional practice and helps deepen your understanding of JavaScript's core functionality. Each implementation is provided with an explanation.
 
-## Contribution Guidelines
+Includes custom implementations of built-in JavaScript methods. Great for practicing and understanding how things work under the hood. Each one is explained in its own file.
 
-If you have your own solutions or different approaches to the problems, feel free to add them. Here are some guidelines to help you contribute effectively:
+## Contributing
 
-1. **Fork the repository** and create a new branch for your contribution.
-2. **Add your solution** to the appropriate section. Make sure to place your solution on the proper code line to avoid making it hard to read or search for solutions.
-3. **Provide explanations** for your solution to help others understand your approach.
-4. **Submit a pull request** with a clear description of your changes.
+Want to add your own solutions or different takes on problems? You’re welcome to! Here's how:
 
-### Example of Adding a Solution
-
-1. Locate the appropriate file for the problem.
-2. Add your solution on a new line or in a separate section if it's a different approach.
-3. Provide a clear and concise explanation of your solution.
-
+1. Fork the repo and create a new branch  
+2. Add your solution in the right section  
+3. Keep the formatting clear and clean  
+4. Add a short explanation if possible  
+5. Open a pull request with a short description of your change
