@@ -59,3 +59,10 @@ function maxEnd3(nums) {
 function sum2(nums) {
   return (nums[0] || 0) + (nums[1] || 0);
 }
+
+// 162
+function middleWay(a, b) {
+  let middleA = a[Math.floor(a.length / 2)];
+  let middleB = b[Math.floor(b.length / 2)];
+  return [middleA, middleB];
+}
