@@ -45,3 +45,12 @@ function reverse3(nums) {
   });
   return result;
 }
+
+// 160
+function maxEnd3(nums) {
+  let largerElement =
+    nums[0] > nums[nums.length - 1] ? nums[0] : nums[nums.length - 1];
+  return nums.map((n) => {
+    return largerElement;
+  });
+}
