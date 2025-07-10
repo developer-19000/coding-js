@@ -36,3 +36,12 @@ function rotateLeft3_2(nums) {
   let slicedArray = nums.slice(1);
   return [...slicedArray, firstElement];
 }
+
+// 159
+function reverse3(nums) {
+  let result = [];
+  nums.forEach((n) => {
+    result.unshift(n);
+  });
+  return result;
+}
