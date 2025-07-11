@@ -71,3 +71,11 @@ function middleWay(a, b) {
 function makeEnds(nums) {
   return [nums[0], nums[nums.length - 1]];
 }
+
+// 164
+function has23(nums) {
+  for (let number of nums) {
+    if (number === 2 || number === 3) return true;
+  }
+  return false;
+}
