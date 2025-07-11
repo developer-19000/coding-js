@@ -79,3 +79,11 @@ function has23(nums) {
   }
   return false;
 }
+
+// 165
+function no23(nums) {
+  for (let number of nums) {
+    if (number === 2 || number === 3) return false;
+  }
+  return true;
+}
