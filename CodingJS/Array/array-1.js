@@ -87,3 +87,15 @@ function no23(nums) {
   }
   return true;
 }
+
+// 166
+function makeLast(nums) {
+  let allZero = new Array(nums.length * 2).fill(0);
+  allZero[allZero.length - 1] = nums[nums.length - 1];
+  return allZero;
+}
+
+function makeLast2(nums) {
+  let allZero = new Array(nums.length * 2 - 1).fill(0);
+  return [...allZero, nums[nums.length - 1]];
+}
