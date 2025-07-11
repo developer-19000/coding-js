@@ -66,3 +66,8 @@ function middleWay(a, b) {
   let middleB = b[Math.floor(b.length / 2)];
   return [middleA, middleB];
 }
+
+// 163
+function makeEnds(nums) {
+  return [nums[0], nums[nums.length - 1]];
+}
