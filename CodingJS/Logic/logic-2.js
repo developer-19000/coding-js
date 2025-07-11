@@ -172,7 +172,7 @@ function findSmallest(arr) {
 // 152 - the 10th test of the website displays the answer wrong. it expects 2 while it should expect -1
 function makeChocolate(small, big, goal) {
   let bigsIcanUse = Math.min(Math.floor(goal / 5), big);
-  let kelosLeft = goal - bigsIcanUse * 5;
-  if (kelosLeft <= small) return kelosLeft;
+  let kilosLeft = goal - bigsIcanUse * 5;
+  if (kilosLeft <= small) return kilosLeft;
   return -1;
 }
