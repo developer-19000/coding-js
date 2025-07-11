@@ -99,3 +99,18 @@ function makeLast2(nums) {
   let allZero = new Array(nums.length * 2 - 1).fill(0);
   return [...allZero, nums[nums.length - 1]];
 }
+
+// 167
+function double23(nums) {
+  if (nums.length < 2) return false;
+  let twoCounts = 0;
+  let threeCounts = 0;
+
+  for (let n of nums) {
+    if (n === 2) twoCounts++;
+    if (n === 3) threeCounts++;
+  }
+
+  if (twoCounts === 2 || threeCounts === 2) return true;
+  return false;
+}
