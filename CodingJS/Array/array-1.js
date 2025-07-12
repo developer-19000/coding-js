@@ -114,3 +114,11 @@ function double23(nums) {
   if (twoCounts === 2 || threeCounts === 2) return true;
   return false;
 }
+
+// 168
+function fix23(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 3 && nums[i - 1] === 2) nums[i] = 0;
+  }
+  return nums;
+}
