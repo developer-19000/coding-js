@@ -171,3 +171,9 @@ function swapEnds2(nums) {
 
   return nums;
 }
+
+// 173
+function midThree(nums) {
+  let middle = Math.floor(nums.length / 2);
+  return [nums[middle - 1], nums[middle], nums[middle + 1]];
+}
