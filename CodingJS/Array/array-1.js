@@ -150,3 +150,8 @@ function sumArray(arr) {
     return acc + next;
   }, 0);
 }
+
+// 171
+function plusTwo(a, b) {
+  return [...a, ...b];
+}
