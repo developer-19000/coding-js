@@ -122,3 +122,11 @@ function fix23(nums) {
   }
   return nums;
 }
+
+// 169
+function start1(a, b) {
+  let count = 0;
+  if (a[0] === 1) count++;
+  if (b[0] === 1) count++;
+  return count;
+}
