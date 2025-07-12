@@ -130,3 +130,23 @@ function start1(a, b) {
   if (b[0] === 1) count++;
   return count;
 }
+
+// 170
+function biggerTwo(a, b) {
+  let sumA = sumArray(a);
+  let sumB = sumArray(b);
+
+  if (sumA > sumB) {
+    return a;
+  } else if (sumB > sumA) {
+    return b;
+  } else {
+    return a;
+  }
+}
+
+function sumArray(arr) {
+  return arr.reduce((acc, next) => {
+    return acc + next;
+  }, 0);
+}
