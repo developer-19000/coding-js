@@ -155,3 +155,19 @@ function sumArray(arr) {
 function plusTwo(a, b) {
   return [...a, ...b];
 }
+
+// 172
+function swapEnds(nums) {
+  [nums[0], nums[nums.length - 1]] = [nums[nums.length - 1], nums[0]];
+  return nums;
+}
+
+function swapEnds2(nums) {
+  let firstElement = nums[0];
+  let lastElement = nums[nums.length - 1];
+
+  nums[0] = lastElement;
+  nums[nums.length - 1] = firstElement;
+
+  return nums;
+}
