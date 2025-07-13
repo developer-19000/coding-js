@@ -177,3 +177,11 @@ function midThree(nums) {
   let middle = Math.floor(nums.length / 2);
   return [nums[middle - 1], nums[middle], nums[middle + 1]];
 }
+
+// 174
+function maxTriple(nums) {
+  let first = nums[0];
+  let middle = nums[Math.floor(nums.length / 2)];
+  let last = nums[nums.length - 1];
+  return Math.max(first, middle, last);
+}
