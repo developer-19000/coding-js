@@ -212,3 +212,10 @@ function make2(a, b) {
 function front11(a, b) {
   return [...a.slice(0, 1), ...b.slice(0, 1)];
 }
+
+function front11_2(a, b) {
+  let result = [];
+  if (a.length > 0) result.push(a[0]);
+  if (b.length > 0) result.push(b[0]);
+  return result;
+}
