@@ -207,3 +207,8 @@ function unlucky1(nums) {
 function make2(a, b) {
   return [...a, ...b].slice(0, 2);
 }
+
+// 178
+function front11(a, b) {
+  return [...a.slice(0, 1), ...b.slice(0, 1)];
+}
