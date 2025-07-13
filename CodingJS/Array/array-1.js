@@ -185,3 +185,14 @@ function maxTriple(nums) {
   let last = nums[nums.length - 1];
   return Math.max(first, middle, last);
 }
+
+// 175
+function frontPiece(nums) {
+  if (nums.length < 1) {
+    return [];
+  } else if (nums.length === 1) {
+    return nums;
+  } else {
+    return [nums[0], nums[1]];
+  }
+}
