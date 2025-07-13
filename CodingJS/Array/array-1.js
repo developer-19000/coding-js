@@ -202,3 +202,8 @@ function unlucky1(nums) {
   const check = (i) => nums[i] === 1 && nums[i + 1] === 3;
   return check(0) || check(1) || check(nums.length - 2);
 }
+
+// 177
+function make2(a, b) {
+  return [...a, ...b].slice(0, 2);
+}
