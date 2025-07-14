@@ -26,3 +26,15 @@ function bigDiff(nums) {
   let smallestElement = Math.min(...nums);
   return largestElement - smallestElement;
 }
+
+function bigDiff2(nums) {
+  let largestElement = Number.NEGATIVE_INFINITY;
+  let smallestElement = Number.POSITIVE_INFINITY;
+
+  nums.forEach((n) => {
+    if (n > largestElement) largestElement = n;
+    if (n < smallestElement) smallestElement = n;
+  });
+
+  return largestElement - smallestElement;
+}
