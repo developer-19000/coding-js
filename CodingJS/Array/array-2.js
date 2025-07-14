@@ -10,3 +10,12 @@ function findLowestIndex(nums) {
   });
   return minIndex;
 }
+
+// 180
+function countEvens(nums) {
+  let count = 0;
+  nums.forEach((n) => {
+    if (n % 2 === 0) count++;
+  });
+  return count;
+}
