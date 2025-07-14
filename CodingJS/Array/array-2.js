@@ -38,3 +38,16 @@ function bigDiff2(nums) {
 
   return largestElement - smallestElement;
 }
+
+// 182
+function centeredAverage(nums) {
+  let sortedArr = nums.sort((a, b) => a - b);
+  sortedArr.splice(0, 1);
+  sortedArr.splice(sortedArr.length - 1, 1);
+
+  let sum = sortedArr.reduce((acc, next) => {
+    return acc + next;
+  }, 0);
+
+  return sum / sortedArr.length;
+}
