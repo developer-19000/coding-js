@@ -19,3 +19,10 @@ function countEvens(nums) {
   });
   return count;
 }
+
+// 181
+function bigDiff(nums) {
+  let largestElement = Math.max(...nums);
+  let smallestElement = Math.min(...nums);
+  return largestElement - smallestElement;
+}
