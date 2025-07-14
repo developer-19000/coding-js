@@ -51,3 +51,26 @@ function centeredAverage(nums) {
 
   return sum / sortedArr.length;
 }
+
+function centeredAverage2(nums) {
+  let min = Math.min(...nums);
+  let max = Math.max(...nums);
+  let skippedMin = false;
+  let skippedMax = false;
+  let arr = [];
+
+  for (let num of nums) {
+    if (num === min && !skippedMin) {
+      skippedMin = true;
+      continue;
+    }
+    if (num === max && !skippedMax) {
+      skippedMax = true;
+      continue;
+    }
+    arr.push(num);
+  }
+
+  let sum = arr.reduce((a, b) => a + b, 0);
+  return sum / arr.length;
+}
