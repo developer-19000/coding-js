@@ -74,3 +74,16 @@ function centeredAverage2(nums) {
   let sum = arr.reduce((a, b) => a + b, 0);
   return sum / arr.length;
 }
+
+// 183
+function sum13(nums) {
+  let sum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 13) {
+      i++;
+      continue;
+    }
+    sum += nums[i];
+  }
+  return sum;
+}
