@@ -87,3 +87,27 @@ function sum13(nums) {
   }
   return sum;
 }
+
+// 184
+function sum67(nums) {
+  let found6 = false;
+  let sum = 0;
+
+  for (let n of nums) {
+    if (n === 7 && found6) {
+      found6 = false;
+      continue;
+    }
+    if (found6) {
+      continue;
+    }
+
+    if (n === 6) {
+      found6 = true;
+      continue;
+    }
+
+    sum += n;
+  }
+  return sum;
+}
