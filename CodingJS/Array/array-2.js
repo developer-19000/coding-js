@@ -119,5 +119,15 @@ function has22(nums) {
       return true;
     }
   }
-  return false
+  return false;
+}
+
+// 186
+function lucky13(nums) {
+  for (let n of nums) {
+    if (n === 1 || n === 3) {
+      return false;
+    }
+  }
+  return true;
 }
