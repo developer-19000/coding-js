@@ -131,3 +131,18 @@ function lucky13(nums) {
   }
   return true;
 }
+
+// 187
+function sum28(nums) {
+  let sum = 0;
+  for (let n of nums) {
+    if (n === 2) {
+      sum += n;
+    }
+  }
+  if (sum === 8) {
+    return true;
+  } else {
+    return false;
+  }
+}
