@@ -146,3 +146,16 @@ function sum28(nums) {
     return false;
   }
 }
+
+// 188
+function more14(nums) {
+  let oneCount = 0;
+  let fourCount = 0;
+
+  for (let n of nums) {
+    if (n === 1) oneCount++;
+    if (n === 4) fourCount++;
+  }
+
+  return oneCount > fourCount;
+}
