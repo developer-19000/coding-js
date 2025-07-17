@@ -165,3 +165,13 @@ function prependSum(nums) {
   let sumOfFirstTwo = nums[0] + nums[1];
   return [sumOfFirstTwo, ...nums.slice(2)];
 }
+
+// 190
+function fizzArray(n) {
+  let result = [];
+  for (let i = 0; i < n; i++) {
+    result.push(i);
+  }
+  return result;
+}
+
