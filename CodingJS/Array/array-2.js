@@ -175,3 +175,10 @@ function fizzArray(n) {
   return result;
 }
 
+// 191
+function only14(nums){
+ for(let n of nums) {
+  if(n !== 1 && n!== 4) return false
+ } 
+ return true
+}
