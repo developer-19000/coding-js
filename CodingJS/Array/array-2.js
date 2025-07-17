@@ -176,9 +176,18 @@ function fizzArray(n) {
 }
 
 // 191
-function only14(nums){
- for(let n of nums) {
-  if(n !== 1 && n!== 4) return false
- } 
- return true
+function only14(nums) {
+  for (let n of nums) {
+    if (n !== 1 && n !== 4) return false;
+  }
+  return true;
+}
+
+// 192
+function fizzArray2(n) {
+  let result = [];
+  for (let i = 0; i < n; i++) {
+    result.push(String(i));
+  }
+  return result;
 }
