@@ -159,3 +159,9 @@ function more14(nums) {
 
   return oneCount > fourCount;
 }
+
+// 189
+function prependSum(nums) {
+  let sumOfFirstTwo = nums[0] + nums[1];
+  return [sumOfFirstTwo, ...nums.slice(2)];
+}
