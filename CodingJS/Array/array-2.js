@@ -211,3 +211,18 @@ function isEverywhere(nums, val) {
   }
   return true;
 }
+
+// 195
+function either24(nums) {
+  let twotwo = false;
+  let fourfour = false;
+
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] === 2 && nums[i + 1] === 2) twotwo = true;
+    if (nums[i] === 4 && nums[i + 1] === 4) fourfour = true;
+  }
+
+  return twotwo !== fourfour;
+  // the code above can be written like : (twotwo && !fourfour) || (!twotwo && fourfour);
+  // the code is shorter and cleaner but the other one is more explicit
+}
