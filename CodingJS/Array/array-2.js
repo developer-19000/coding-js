@@ -191,3 +191,16 @@ function fizzArray2(n) {
   }
   return result;
 }
+
+// 193
+function no14(nums) {
+  return noNumber(nums, 1) || noNumber(nums, 4);
+}
+
+function noNumber(arr, number) {
+  for (let n of arr) {
+    if (n === number) return false;
+  }
+  return true;
+}
+
