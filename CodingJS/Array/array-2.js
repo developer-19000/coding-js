@@ -252,3 +252,19 @@ function has77(nums) {
   }
   return false;
 }
+
+// 198
+function has12(nums) {
+  let indexOfOne = nums.indexOf(1);
+  if (indexOfOne === -1) {
+    return false;
+  }
+  for (let i = indexOfOne; i < nums.length; i++) {
+    if (nums[i] === 2) {
+      return true;
+    } else {
+      continue;
+    }
+  }
+  return false;
+}
