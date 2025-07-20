@@ -226,3 +226,15 @@ function either24(nums) {
   // the code above can be written like : (twotwo && !fourfour) || (!twotwo && fourfour);
   // the code is shorter and cleaner but the other one is more explicit
 }
+
+// 196 => another question with problems in displaying correct test results
+function matchUp(nums1, nums2) {
+  let count = 0;
+  for (let i = 0; i < nums1.length; i++) {
+    const diff = Math.abs(nums1[i] - nums2[i]);
+    if (diff <= 2 && diff !== 0) {
+      count++;
+    }
+  }
+  return count;
+}
