@@ -286,3 +286,18 @@ function modThree(nums) {
 function isEven(n) {
   return n % 2 === 0;
 }
+
+// 200 => another question with problems in displaying correct test results
+function findTheMedian(nums) {
+  let sortedArray = nums.sort((a, b) => a - b);
+  let length = sortedArray.length;
+
+  if (length % 2 !== 0) {
+    let middleValue = sortedArray[Math.floor(length / 2)];
+    return middleValue;
+  } else {
+    let middleUp = sortedArray[Math.ceil(length / 2)];
+    let middleDown = sortedArray[Math.floor(length / 2)];
+    return (middleUp + middleDown) / 2;
+  }
+}
