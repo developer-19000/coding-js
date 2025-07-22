@@ -268,3 +268,21 @@ function has12(nums) {
   }
   return false;
 }
+
+// 199
+function modThree(nums) {
+  if (nums.length < 3) return false;
+  for (let i = 0; i < nums.length - 2; i++) {
+    let first = isEven(nums[i]);
+    let second = isEven(nums[i + 1]);
+    let third = isEven(nums[i + 2]);
+
+    if (first && second && third) return true;
+    if (!first && !second && !third) return true;
+  }
+  return false;
+}
+
+function isEven(n) {
+  return n % 2 === 0;
+}
