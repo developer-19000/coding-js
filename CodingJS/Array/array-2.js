@@ -301,3 +301,18 @@ function findTheMedian(nums) {
     return (middleUp + middleDown) / 2;
   }
 }
+
+// 201
+function haveThree(nums) {
+  let count = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 3) {
+      if (nums[i + 1] === 3) {
+        return false;
+      } else {
+        count++;
+      }
+    }
+  }
+  return count === 3;
+}
