@@ -347,3 +347,12 @@ function tripleUp(nums) {
   }
   return false;
 }
+
+// 204
+function fizzArray3(start, end) {
+  let result = [];
+  for (let i = start; i < end; i++) {
+    result.push(i);
+  }
+  return result;
+}
