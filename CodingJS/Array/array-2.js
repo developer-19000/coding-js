@@ -394,3 +394,14 @@ function pre4(nums) {
   }
   return result;
 }
+
+// 208
+function post4(nums) {
+  let result = [];
+  let lastFourIndex = nums.lastIndexOf(4);
+  if (lastFourIndex === -1) return result;
+  for (let i = lastFourIndex + 1; i < nums.length; i++) {
+    result.push(nums[i]);
+  }
+  return result;
+}
