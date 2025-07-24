@@ -356,3 +356,8 @@ function fizzArray3(start, end) {
   }
   return result;
 }
+
+// 205 => 4th test doesn't pass even though the result is correct
+function c(nums) {
+  return [...nums.slice(1), nums[0]];
+}
