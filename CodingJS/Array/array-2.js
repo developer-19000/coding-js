@@ -328,3 +328,22 @@ function twoTwo(nums) {
   }
   return true;
 }
+
+// 203
+function tripleUp(nums) {
+  for (let i = 0; i < nums.length - 2; i++) {
+    let currentNumber = nums[i];
+    let firstNextNumber = nums[i + 1];
+    let secondNextNumber = nums[i + 2];
+
+    if (
+      firstNextNumber === currentNumber + 1 &&
+      secondNextNumber === firstNextNumber + 1
+    ) {
+      return true;
+    } else {
+      continue;
+    }
+  }
+  return false;
+}
