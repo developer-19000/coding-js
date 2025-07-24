@@ -382,3 +382,15 @@ function tenRun(nums) {
   }
   return result;
 }
+
+// 207
+function pre4(nums) {
+  let result = [];
+  for (let n of nums) {
+    if (n === 4) {
+      return result;
+    }
+    result.push(n);
+  }
+  return result;
+}
