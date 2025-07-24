@@ -361,3 +361,24 @@ function fizzArray3(start, end) {
 function c(nums) {
   return [...nums.slice(1), nums[0]];
 }
+
+// 206
+function tenRun(nums) {
+  let result = [];
+  let multiply = false;
+  let lastMultiple;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 10 === 0) {
+      lastMultiple = nums[i];
+      multiply = true;
+    }
+
+    if (multiply) {
+      result.push(lastMultiple);
+    } else {
+      result.push(nums[i]);
+    }
+  }
+  return result;
+}
