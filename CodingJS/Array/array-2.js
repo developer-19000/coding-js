@@ -443,3 +443,15 @@ function notAlone2(nums, val) {
   return nums;
 }
 
+// 210
+function zeroFront(nums) {
+  let result = [];
+  for (let n of nums) {
+    if (n === 0) {
+      result.unshift(n);
+    } else {
+      result.push(n);
+    }
+  }
+  return result;
+}
