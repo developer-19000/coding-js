@@ -405,3 +405,25 @@ function post4(nums) {
   }
   return result;
 }
+
+// 209
+function notAlone(nums, val) {
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] === val) {
+      let left = nums[i - 1];
+      let right = nums[i + 1];
+
+      if (left !== undefined && right !== undefined) {
+        if (left !== val && right !== val) {
+          let bigger = left > right ? left : right;
+          nums.splice(i, 1, bigger);
+        } else {
+          continue;
+        }
+      } else {
+        continue;
+      }
+    }
+  }
+  return nums;
+}
