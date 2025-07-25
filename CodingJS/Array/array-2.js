@@ -427,3 +427,19 @@ function notAlone(nums, val) {
   }
   return nums;
 }
+
+function notAlone2(nums, val) {
+  for (let i = 1; i < nums.length - 1; i++) {
+    if (nums[i] !== val) continue;
+
+    let left = nums[i - 1];
+    let right = nums[i + 1];
+
+    if (left === val || right === val) continue;
+
+    let bigger = left > right ? left : right;
+    nums[i] = bigger;
+  }
+  return nums;
+}
+
