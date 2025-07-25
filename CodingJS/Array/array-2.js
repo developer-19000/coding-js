@@ -455,3 +455,18 @@ function zeroFront(nums) {
   }
   return result;
 }
+
+// 211
+function withoutTen(nums) {
+  let withoutTenArr = [];
+  let zeros = [];
+
+  for (let n of nums) {
+    if (n !== 10) {
+      withoutTenArr.push(n);
+    } else {
+      zeros.push(0);
+    }
+  }
+  return [...withoutTenArr, ...zeros];
+}
