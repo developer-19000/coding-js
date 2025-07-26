@@ -470,3 +470,29 @@ function withoutTen(nums) {
   }
   return [...withoutTenArr, ...zeros];
 }
+
+// 212
+function zeroMax(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 0) {
+      let oddsAffterI = oddNumsOfArray(nums, i + 1);
+      let maxOddNumber = Math.max(...oddsAffterI);
+      if (maxOddNumber === -Infinity) maxOddNumber = 0;
+      nums[i] = maxOddNumber ?? 0;
+      continue;
+    }
+  }
+  return nums;
+}
+
+function oddNumsOfArray(arr, fromIndex = 0) {
+  let result = [];
+  for (let i = fromIndex; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(zeroMax([0, 1, 0]));
