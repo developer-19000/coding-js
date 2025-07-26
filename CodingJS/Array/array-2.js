@@ -496,3 +496,15 @@ function oddNumsOfArray(arr, fromIndex = 0) {
 }
 
 console.log(zeroMax([0, 1, 0]));
+
+function zeroMax2(nums) {
+  let maxOdd = 0;
+  for (let i = nums.length - 1; i >= 0; i--) {
+    if (nums[i] % 2 !== 0) {
+      maxOdd = Math.max(maxOdd, nums[i]);
+    } else if (nums[i] === 0) {
+      nums[i] = maxOdd;
+    }
+  }
+  return nums;
+}
