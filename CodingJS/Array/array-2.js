@@ -508,3 +508,17 @@ function zeroMax2(nums) {
   }
   return nums;
 }
+
+// 213
+function evenOdd(nums) {
+  let result = [];
+
+  for (let n of nums) {
+    if (n % 2 === 0) {
+      result.unshift(n);
+    } else {
+      result.push(n);
+    }
+  }
+  return result;
+}
