@@ -26,3 +26,25 @@ function maxSpan2(nums) {
   }
   return largestSpan;
 }
+
+// note : uing map results in wrong test results on the website. but the solution is correct
+function maxSpanMap(nums) {
+  let span = 0;
+  let map = new Map();
+
+  for (let i = 0; i < nums.length; i++) {
+    if (map.has(nums[i])) {
+      let obj = map.get(nums[i]);
+      obj.lastAppearance = i;
+    } else {
+      map.set(nums[i], { firstAppearance: i, lastAppearance: i });
+    }
+  }
+
+  for (let [key, obj] of map) {
+    let currentSpan = obj.lastAppearance - obj.firstAppearance + 1;
+    if (currentSpan > span) span = currentSpan;
+  }
+
+  return span;
+}
