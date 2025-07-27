@@ -15,3 +15,14 @@ function maxSpan(nums) {
   }
   return largestSpan;
 }
+
+function maxSpan2(nums) {
+  let largestSpan = 0;
+  for (let n of nums) {
+    let firstIndex = nums.indexOf(n);
+    let lastIndex = nums.lastIndexOf(n);
+    let span = lastIndex - firstIndex + 1;
+    if (span > largestSpan) largestSpan = span;
+  }
+  return largestSpan;
+}
