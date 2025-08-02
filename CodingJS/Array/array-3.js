@@ -48,3 +48,29 @@ function maxSpanMap(nums) {
 
   return span;
 }
+
+// 216
+function fix34(nums) {
+  let freeFours = [];
+  let threesThatNeedFour = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 4 && nums[i - 1] !== 3) {
+      freeFours.push(i);
+    }
+
+    if (nums[i] === 3 && nums[i + 1] !== 4) {
+      threesThatNeedFour.push(i);
+    }
+  }
+
+  for (let i = 0; i < freeFours.length; i++) {
+    let temp = nums[threesThatNeedFour[i] + 1];
+    nums[threesThatNeedFour[i] + 1] = 4;
+    nums[freeFours[i]] = temp;
+  }
+
+  return nums;
+}
+
+console.log(fix34([1, 3, 1, 4, 4, 3, 1]));
